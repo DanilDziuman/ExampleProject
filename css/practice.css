@@ -1,0 +1,107 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(39, 61, 70);
+    background: url(../img/lines.png) 75% 75px no-repeat, rgb(232, 232, 232);
+}
+
+main {
+    padding: 7.35% 20.14% 6.06%;
+}
+
+span.topic {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    opacity: 0.5;
+    line-height: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 50px;
+    text-align: center;
+}
+
+img.running-man {
+    display: block;
+    width: 100%;
+    margin: 80px 0;
+    border: 10px solid rgb(255, 255, 255);
+    box-shadow: 0px 15px 32.5px rgba(15, 16, 16, 0.15);
+}
+
+p.text {
+    padding: 0 5.23%;
+    margin: 50px 0;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+ul.list {
+    margin: 50px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+ul.list li {
+    padding: 0 9.04%;
+    background: url(../img/icons/list_icon.png) 5.23% 50%  no-repeat;
+}
+
+ul.list > .first-li {
+    text-shadow: 0px 0px 1px rgba(0,0,0);
+}
+
+ul.list > .second-li {
+    font-style: italic;
+    color: rgb(128, 183, 179);
+}
+
+ul.list > .third-li {
+    font-weight: 700;
+}
+
+ul.list > .fourth-li {
+    text-decoration: line-through;
+    color: rgba(39, 61, 70, 0.3);
+}
+
+button.full {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    color: rgb(255, 255, 255);
+    background: rgb(128,183,179);
+    box-shadow: 0px 0px 32.5px rgba(15, 16, 16, 0.15);
+    border-radius: 25px;
+    margin: 0 0 0 5.23%;
+    padding: 0 30px 0;
+}
+
+.arrow {
+    font-size: 24px;
+}
+
+/* 1) content-ную картинку (не иконку) лучше загружать в JPEG, потому что в этом формата она более приспособлена к сжатию
+   2) иконки лучше загружать по возможности в векторном формате SVG 
+   3) стрелочку &rightarrow стоило выгрузить как SVG-картинку 
+   4) font-family по умолчанию для body следует определять по кол-ву текста, а не по кол-ву блоков 
+
+   *) - Мастерство вёрстки определяется тем, насколько быстро и правильно мне удаётся разбить макет на блоки
+   
+   5) изначально стоит разбить макет на блоки и подблоки, не стоит писать все блоки по порядку, без подблоков!
+   6) разница между <button> и <a> в том что <button> используется внутри формы, а кнопка в данном макете - просто стилизированная ссылка <a>
+   7) общие css-параметры следует применять к контейнерам!
+   8) вместо opacity для прозрачности текста лучше просто выбрать правильный цвет,чем ставить прозрачность!
+   9) PixelPerfect
+   10) Иконка с background может быть в теории использована тогда, когда не планируется никаких доп. действий с этой иконкой (типа анимации)
+       Если иконка должна будет анимироваться при наведении или ещё что, то заместь background используются псевдоэлементы ::before / ::after
+    11) margin-отступы нужно делать от контейнеров, при этом последние элементы в контейнерах не должны иметь нижние оступы (!), чтобы они
+    не суммировались с отступами самого контейнера 
+    12) шаблон Фрилансера для патронов 
+    13) 20 макетов = портфолио верстальщика */
